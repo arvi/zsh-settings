@@ -1,0 +1,6 @@
+# https://redis.io/docs/getting-started/installation/install-redis-on-mac-os/#connect-to-redis
+# redis-cli - no need for alias; connect to redis
+alias redis-srv="redis-server"
+alias redis-start="brew services start redis"
+alias redis-stop="brew services stop redis"
+alias redis-info="brew services info redis"

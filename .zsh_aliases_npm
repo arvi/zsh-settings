@@ -1,0 +1,3 @@
+alias npi="npm install"
+alias npu="npm uninstall"
+alias ncu="npx npm-check-updates"

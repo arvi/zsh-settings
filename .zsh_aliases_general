@@ -1,0 +1,17 @@
+# clear shortcut
+alias clr="clear"
+
+# zoxide replacement for cd: https://github.com/ajeetdsouza/zoxide
+alias cd="z"
+
+# modern replacement for ls: https://the.exa.website/
+alias ls="exa"
+
+# list directory structure in tree like diagram: https://github.com/dduan/tre
+alias lst="tre"
+
+# modern replacement for cat
+alias cat="bat"
+
+# reloads zsh when you make changes without exiting terminal
+alias zshr="exec zsh"

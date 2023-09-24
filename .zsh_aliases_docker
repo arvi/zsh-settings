@@ -1,0 +1,104 @@
+alias dch="docker -h"
+alias dcv="docker version"
+
+# display container processes e.g dctop CONTAINER_ID or dctop PREFIX_CONTAINER_ID
+alias dctop="docker top"
+
+
+# build a docker image from docker file (should be ran in directory with DockerFile) e.g dcb NEW_DOCKER_IMAGE_NAME . where (.) is a current working directory
+alias dcb="docker build -t"
+
+# tag built docker image needed before pushing to docker registry e.g dct IMAGE_ID NAME_HERE/newcontainerofcats:latest or whatever tag e.g :1.0.0
+alias dct="docker tag"
+
+# push docker image to docker hub e.g dcps NAME_HERE/newcontainerofcats:latest
+alias dcps="docker push"
+
+
+# run an existing container or will download first if the image does not exists locally but existing from docker hub
+alias dcrn="docker run"
+
+# open an existing running container e.g dcrnit IMAGE_NAME:TAG bash
+alias dcrnit="docker run -it"
+
+# starts, restarts or stops docker container e.g dcstp CONTAINER_ID
+alias dcr="docker restart"
+alias dcstr="docker start"
+alias dcstp="docker stop"
+
+# remove container e.g dcrm CONTAINER_ID
+alias dcrmc="docker rm"
+
+# remove image e.g dcrmi IMAGE_ID
+alias dcrmi="docker rmi"
+
+# run on a port e.g dcrn-d 8081:80 NAME_OF_IMAGE, -d runs it in detached mode so you don't need to keep terminal open
+alias dcrn-p="docker run -p"
+alias dcrn-d="docker run -d -p"
+
+# list containers running in docker host
+alias dclsc="docker ps"
+alias dclsca="docker ps -a"
+
+# list images that's been downloaded in docker host
+alias dclsi="docker images"
+
+# pull image from registry
+alias dcpl="docker pull"
+
+# inspect docker image by id e.g dcin IMAGE_ID
+alias dcin="docker inspect"
+
+# inspect port mapping of docker container e.g dcport CONTAINER_ID
+alias dcport="docker port"
+
+# list all process running inside a docker container e.g dcex CONTAINER_ID ps -aux, dcex CONTAINER_ID sh (then df -k command to list filesystem)
+alias dcex="docker exec -it"
+
+# show container logs
+alias dclogs="docker logs -t"
+
+
+# create a named volume e.g dcvc mariadb_data, persists even if container is deleted e.g a mariadb / mysql db volume that should persist
+alias dcvc="docker volume create"
+
+# list all volumes
+alias dclsv="docker volume ls"
+
+# inspect volume e.g dcvin VOLUME_NAME
+alias dcinv="docker volume inspect"
+
+# delete volume e.g dcvrm VOLUME_NAME
+alias dcrmv="docker volume rm"
+
+# docker compose
+# compose the compose.yml or docker-compose.yml in the directory this command was ran against e.g dcup or dcup-d if you want it in detached mode
+alias dccup="docker compose up"
+alias dccup-d="docker compose up -d"
+
+# stop the composed containers
+alias dccdown="docker compose down"
+alias dccdown-v="docker compose down -v"
+
+# compose run e.g dccrn SERVICE_NAME npm install
+alias dccrn="docker compose run"
+
+# build/rebuild image(s) if there are changes in Dockerfile
+alias dccb="docker compose build"
+
+alias dccstp="docker compose stop"
+
+# list services
+alias dcclss="docker compose ps"
+
+# push images to registry
+alias dccps="docker compose push"
+
+# same as docker CLI, you can also see log of specific service name (found in Dockerfile) e.g dcclogs web
+alias dcclogs="docker compose logs"
+
+# view the composed container files e.g dccexec SERVICE_NAME bash
+alias dccexec="docker compose exec"
+
+# docker login
+alias dclogin="docker login --username=NAME_HERE"

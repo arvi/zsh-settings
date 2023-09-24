@@ -1,0 +1,46 @@
+alias gin="git init"
+alias grao="git remote add origin"
+alias gcl="git clone"
+
+alias gb="git branch"
+alias gbr="git for-each-ref --count=5 --sort=-committerdate refs/heads/ --format='%(refname:short)'" # list 5 recent branches
+alias gbm="git branch -m" # rename old_branch new_branch
+
+alias gch="git checkout"
+alias gchprev="git checkout -" # switch to the branch last checked out
+alias gchb="git checkout -b"
+
+alias gcun="git clean -i" # remove untracked files interactive mode
+alias gcom="git commit"
+alias gcomz="git cz" # commitizen commit friendly
+alias gcz="git cz" # commitizen commit friendly
+alias gtag="git tag" # e.g gtag -a v1.0 -m “v5.3.0”
+
+alias ga="git add"
+alias gaa="git add --all"
+
+alias gs="git status"
+alias gl="git log"
+alias gref="git reflog"
+
+alias gwc="git whatchanged"
+alias gwcp="git whatchanged -p --abbrev-commit --pretty=medium"
+
+alias gpl="git pull"
+alias gplo="git pull origin"
+alias gps="git push"
+alias gpso="git push origin"
+alias gfe="git fetch -a"
+
+alias gmer="git merge"
+alias gmera="git merge --abort"
+alias gdif="git diff --check"
+alias gsh="git show" # gsh or gsh <commit_id> - shows metadata of current / specified commit
+
+alias gst="git stash" # gst drop - discard stashed changes, gst pop - apply and drop stashed changes
+alias gstl="git stash list"
+alias gsts="git stash save" # stash changes
+alias gsta="git stash apply" # unstash changes
+
+alias gconfl="git config --list --local"
+alias gconfg="git config --list --global"

@@ -1,0 +1,6 @@
+# load ssh keys
+ssh-add --apple-load-keychain
+
+export GITHUB_PACKAGE_AUTH_TOKEN=GITHUB_PKG_AUTH_TOKEN_HERE
+export BITBUCKET_USERNAME=NAME_HERE
+export BITBUCKET_APP_PASSWORD=PW_HERE

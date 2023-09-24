@@ -1,0 +1,2 @@
+alias sshp="cp -R ~/.ssh/config_personal ~/.ssh/config"
+alias sshw="cp -R ~/.ssh/config_work ~/.ssh/config"
