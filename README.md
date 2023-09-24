@@ -5,4 +5,5 @@ zsh Settings
 - ZSH `plugins` and `.zprofile`
 - `spaceship-prompt.sh` settings
 - `nvm` hook
-- Load ssh keys and settings for github and bitbucket repo
+- Loa# zsh-settings
+zsh Settings
